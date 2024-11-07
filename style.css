@@ -1,5 +1,103 @@
-/* Agrego algun estilo a mi proyecto */
-/* Agrego algun estilo a mi proyecto */
-/* Agrego algun estilo a mi proyecto */
-/* Agrego algun estilo a mi proyecto */
-/* Agrego algun estilo a mi proyecto */
+    body {
+      background-color: #1f2023;
+      width: 40%;
+      max-width:600px;
+      text-align: center;
+      margin:auto;
+      font-family: 'roboto', sans-serif;
+    }
+
+    h1{
+      color:#e8eaed;
+      text-align: center;
+      font-size: 60px;
+      font-family: 'Poppins', sans-serif;
+      margin: auto;
+      border: 25px solid #4d6d63;
+      border-left: 20px solid #1f2023 ;
+      border-right: 20px solid #1f2023;
+      margin-bottom: 30px;
+      width: 140%;  
+      }
+
+  legend{
+    text-align: left;
+    background-color: #2b3d37;
+    color:#fdecd1;
+    font-family:'Poppins', sans-serif ;
+    font-size: 25px;
+    border-radius: 3px;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  
+  fieldset{
+    background-color: #a6c1b9;
+    border: 2px  solid #4d6d63;
+    border-radius: 5px;
+    font-family:'Roboto', sans-serif; 
+    margin-bottom: 70px;
+    padding: 40px;
+    
+  }
+  
+  .color-terminos{
+    color: #fff;
+  }
+  
+  .margen{
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  button{
+    background-color: #2b3d37;
+    color: #a5c0b5;
+    font-family:'Roboto', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid  #a5c0b5;
+    border-radius: 5px;
+    width: 250px;
+    margin-left: 150px;
+    }
+   
+  form{
+    display:block;
+    align-items: center;
+    margin: auto;
+    width: 900px;
+  }
+  
+  .ancho-casilla{
+    width: 650px;
+  }
+  
+  .centro{
+    display: flex;
+    text-align: left;
+    margin: auto;
+  }
+  .margen-izquierdo{
+    margin-left: 250px;
+  }
+  .margen-superior{
+    margin-top: 30px;
+  }
+  input:active{
+    background-color: #4d6d63;
+  }
+  textarea:active{
+    background-color: #4d6d63;
+  }
+  
+  .esquinas{
+    border: 10px dotted #a6c1b9;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 30px;
+    width: 200px;
+    margin-left: 350px;
+  }
+  

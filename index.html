@@ -2,23 +2,118 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Vite App</title>
+   
+    <meta name="viewport" >
+    <title>formulario</title>
   </head>
   <body>
-  
-    <h1>proyecto vite inicial</h1>
-    <hr>
-    <!-- codigo del proyecto -->
-
     
+    <h1>Vení al Gym! 💪</h1>
     
+    <form action=" https://postman-echo.com/post" method="post" target="_blank">
+    
+      <fieldset>
+        <legend>🙋‍♂️ Datos Personales 👀</legend> 
+        <div>
+        <label for="nombre">Nombre: *</label><br>
+        <input type="text" id="nombre" name="nombre" class="centro ancho-casilla margen" required>
+        </div>
+    
+        <div>
+       <label for="apellido">Apellido: *</label>
+        <input type="text" id="apellido" name="apellido" class="centro ancho-casilla margen" required>
+        </div>
+    
+        <div >
+        <label for="documento">Documento: *</label>
+        <input type="number"  class="centro ancho-casilla margen" required>
+        </div>
+    
+        <div >
+        <label for="nacionalidad">Nacionalidad: *</label>
+        <select name="menu" required  class="centro ancho-casilla margen">
+          
+            <option value="1">Seleccionar</option>
+            <option value="2">Argentina</option>
+            <option value="2">Bolivia</option>
+            <option value="2">Brasil</option>
+            <option value="3">Chile</option>
+            <option value="4">Paraguay</option>
+            <option value="5">Uruguay</option>
+       </select>
+       </div>
 
+        <div >
+       <label for="comentarios">Contanos un poco de vos...</label>
+       <textarea name="textarea" rows="8" cols="60" class="centro ancho-casila margen"></textarea><br>
+       </div>
+    
+        <div >
+          <label for="sexo">Sexo: *</label> <br><br>
+          
+          <input type="radio" name="genero" value="femenino">
+          <label for="">Femenino</label>
+          <input type="radio" name="genero" value="masculino">
+          <label for="">Masculino</label>
+          <input type="radio" name="genero" value="otro">
+          <label for="">Otro</label>
+          </div>
+          </fieldset>
 
+        <div class="esquinas"></div>
 
+        <fieldset>
+        <legend>📱Datos de Contacto 📧 </legend>
+          <div>
+            <label for="telefono">Teléfono: </label><br><br>
+            <input type="number" placeholder="Código de área y número" class="centro ancho-casilla margen" >
+          </div>
 
+          <div>
+            <label for="correo">Dirección de correo electrónico *</label><br><br>
+            <input type="email" required placeholder="Ej: mail@gmail.com" class="centro ancho-casilla margen">
+          </div>
+        </fieldset>
+        
+        <div class="borde-punteado"></div>
+        
+        <fieldset>
+          <legend>  🚴🏽 Actividades 🤸🏽  </legend>
+          <p>Por favor, indicar cuales actividades te interesan.</p>
+          <p>Sede Palermo</p>
+          <input type="checkbox" name="actividad" value="basquet">
+          <label for="">Básquet</label>
+          <input type="checkbox" name="actividad" value="boxeo">
+          <label for="">Boxeo</label>
+          <input type="checkbox" name="actividad" value="futbol">
+          <label for="">Fútbol</label>
+          <input type="checkbox" name="actividad" value="tenis">
+          <label for="">Tenis</label>
+          
+          <p>Sede Rosario</p>
+          <input type="checkbox" name="actividad" value="basquet">
+          <label for="">Básquet</label>
+          <input type="checkbox" name="actividad" value="futbol">
+          <label for="">Fútbol</label>
+          <input type="checkbox" name="actividad" value="rugby">
+          <label for="">Rugby</label>
+          <input type="checkbox" name="actividad" value="voley">
+          <label for="">Voley</label>
 
-
-
+        </fieldset>
+       
+        <div class="color-terminos">
+          <input type="checkbox" name="condiciones" value="condiciones" required>
+          <label for="">Acepto las condiciones*</label><br><br>
+          <input type="checkbox" name="novedades" value="novedades">
+          <label for="">Deseo recibir novedades</label>
+          <p>*: campo obligatorio.</p>
+        </div>
+        
+        <button type="submit">Iniciar afiliación</button>
+        <button type="reset">Restablecer</button>
+        
+    </form>
 
 
     <script type="module" src="/main.js"></script>
